@@ -6,7 +6,7 @@ pipeline {
 	CLUSTER_NAME="demo-cluster"
 	SERVICE_NAME="demo-service"
 	TASK_DEFINITION_NAME="demo-td"
-        IMAGE_REPO_NAME="hello"
+        IMAGE_REPO_NAME="157805893071.dkr.ecr.ap-south-1.amazonaws.com/hello"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
 	registryCredential = "aws_admin_user"
